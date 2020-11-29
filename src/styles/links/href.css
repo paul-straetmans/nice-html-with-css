@@ -1,0 +1,11 @@
+/* Links go nowhere? */
+/* This selector hunts for links that have:
+- No href
+- an empty href
+- a "#" href (button parhaps?) */
+/* By Adam Argyle */
+
+a:matches(:not([href]), [href=''], [href='#']) {
+  outline: var(--lint);
+  content: "This selector hunts for links that have No href, an empty href and a '#' href";
+}

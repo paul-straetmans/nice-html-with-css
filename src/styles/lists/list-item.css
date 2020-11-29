@@ -1,0 +1,8 @@
+/* Only <li>'s allowed here! */
+/* This selector hunts for lists that have something other than an <li> inside */
+/* By Adam Argyle */
+
+:matches(ul, ol) *:not(li) {
+  outline: var(--lint);
+  content: 'This selector hunts for lists that have something other than an <li> inside';
+}
