@@ -1,14 +1,51 @@
+// META
 @import 'meta/utf-8.css';
+
+// LINKS
 @import 'links/href.css';
+@import 'links/unsecure.css';
+@import 'links/empty-link.css';
+
+// BUTTONS
+@import 'buttons/button-type.css';
+@import 'buttons/button-label.css';
+@import 'buttons/empty-button.css';
+
+// LISTS
 @import 'lists/list-item.css';
-@import 'headlines/empty-headline.css';
+
+// TEXT
+@import 'text/empty-headline.css';
+@import 'text/headline-order.css';
+@import 'text/headline-inside-atag.css';
+
+// INPUTS
 @import 'inputs/input-no-label.css';
 @import 'inputs/id-for-attr.css';
+
+// MEDIA
 @import 'media/img-alt.css';
+@import 'media/img-dimensions.css';
+@import 'media/img-lazy.css';
+@import 'media/svg-focusable.css';
+@import 'media/svg-title.css';
+
+// TABLE
+@import 'tables/table-caption.css';
+
+// OTHER
+@import 'other/tabindex.css';
+@import 'other/iframe-lazy.css';
+@import 'other/html-lang.css';
+@import 'other/html-lang-dir.css';
+@import 'other/details-summary.css';
+@import 'other/fieldset-legend.css';
+@import 'other/divs-inside-inline.css';
+@import 'other/embed-iframe-dimensions.css';
 
 :root {
-  --lintWarning: 2px dotted lime;
-  --lintError: 2px dashed aqua;
+  --lintWarning: 2px dotted orange;
+  --lintError: 2px dashed red;
 }
 
 body {

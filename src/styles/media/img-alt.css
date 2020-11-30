@@ -1,8 +1,9 @@
 /* Image without alt attribute? */
 /* Debug images without alt attribute with CSS. */
 /* By Geoffrey Crofte */
+/* edited by Paul Straetmans */
 
-img:not([alt]) {
+img:matches(:not([alt]), [alt='']) {
   outline: var(--lintError);
   content: '🙀 <img> without alt attribute.';
 }

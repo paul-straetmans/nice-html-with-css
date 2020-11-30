@@ -1,0 +1,8 @@
+/* Tables should have a caption */
+/* This one is useful to force each <caption> to be the first direct child of a <table> elements. */
+/* By Quentin Bellanger */
+
+table > *:first-child:not(caption) {
+  outline: var(--lintError);
+  content: '🙀 <table> caption is missing';
+}

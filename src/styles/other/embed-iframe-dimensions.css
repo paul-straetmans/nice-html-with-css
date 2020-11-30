@@ -1,0 +1,8 @@
+/* <embeds> or <iframes> without height and width that will cause cumulative layout shift. See: https://web.dev/optimize-cls/#ads-embeds-and-iframes-without-dimensions */
+/* By Jay Holtslander */
+
+embed:not([width]),
+iframe:not([height]) {
+  outline: var(--lintWarning);
+  content: '😿 <embeds> or <iframes> without height and width that will cause cumulative layout shift. See: https://web.dev/optimize-cls/#ads-embeds-and-iframes-without-dimensions';
+}

@@ -1,0 +1,7 @@
+/* No divs inside inline elements */
+/* By Adam Argyle */
+
+:matches(b, i, q, em, abbr, cite, code, span, small, label, strong) > div {
+  outline: var(--lintWarning);
+  content: '😿 No divs inside inline elements';
+}

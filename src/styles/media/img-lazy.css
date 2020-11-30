@@ -1,0 +1,7 @@
+/* <img> without native lazy loading */
+/* By Jay Holtslander */
+
+img:not([loading='lazy']) {
+  outline: var(--lintWarning);
+  content: '😿 <img> without native lazy loading';
+}

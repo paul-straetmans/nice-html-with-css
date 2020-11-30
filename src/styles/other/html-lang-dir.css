@@ -1,0 +1,9 @@
+/* Mismatched [dir] && [lang] */
+/* By Adam Argyle */
+
+[dir='rtl']:not([lang='ar'], [lang='he']),
+:matches([lang='ar'], [lang='he']):not([dir='rtl']),
+:matches([lang='ar'], [lang='he']) [lang]:not([dir='ltr']) {
+  outline: var(--lintWarning);
+  content: '😿 [dir] && [lang] do not match';
+}

@@ -1,0 +1,10 @@
+/* Find all the buttons without any label */
+/* By Tanisha Sabherwal */
+
+input[type='button']:not([aria-label]),
+input[type='reset']:not([aria-label]),
+input[type='submit']:not([aria-label]),
+button:not([aria-label]) {
+  outline: var(--lintError);
+  content: '🙀 <button> has no label';
+}

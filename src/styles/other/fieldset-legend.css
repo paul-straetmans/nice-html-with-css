@@ -1,0 +1,7 @@
+/* Fieldset where legend isn't the first child */
+/* By Geoffrey Crofte */
+
+fieldset > :first-child:not(legend)::before {
+  outline: var(--lintWarning);
+  content: '😿 add a <legend> first';
+}

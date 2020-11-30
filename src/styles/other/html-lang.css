@@ -1,0 +1,8 @@
+/* Prevents the absence of lang attribute */
+/* By Geoffry Crofte */
+
+html:not([lang])::before,
+html[lang='']::before {
+  outline: var(--lintWarning);
+  content: '😿 [lang] attribute is missing or has no value';
+}

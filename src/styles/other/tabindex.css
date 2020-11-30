@@ -1,0 +1,7 @@
+/* this selector hunts for elements with a tabindex other than 0 or -1 */
+/* By Adam Argyle */
+
+[tabindex]:not([tabindex='0'], [tabindex='-1']) {
+  outline: var(--lintWarning);
+  content: '😿 <element> with tabindex other than 0 or -1';
+}

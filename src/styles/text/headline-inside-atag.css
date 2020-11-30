@@ -1,0 +1,12 @@
+/* No headings inside inline <a> tag */
+/* By Tanisha Sabherwal */
+
+a h1,
+a h2,
+a h3,
+a h4,
+a h5,
+a h6 {
+  outline: var(--lintWarning);
+  content: '😿 Avoid headings inside inline <a> tag';
+}
