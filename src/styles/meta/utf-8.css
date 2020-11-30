@@ -1,3 +1,7 @@
 meta[charset]:not([charset='UTF-8']) {
-  content: 'bingo';
+  content: '🙀 No UTF-8 defined';
+}
+
+meta[charset='UTF-8']:not(:first-child) {
+  content: '🙀 charset is not first element after <head>';
 }

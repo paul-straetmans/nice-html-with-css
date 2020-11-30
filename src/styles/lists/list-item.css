@@ -3,6 +3,6 @@
 /* By Adam Argyle */
 
 :matches(ul, ol) *:not(li) {
-  outline: var(--lint);
-  content: 'This selector hunts for lists that have something other than an <li> inside';
+  outline: var(--lintError);
+  content: '🙀 no usage of <li> element on first level';
 }

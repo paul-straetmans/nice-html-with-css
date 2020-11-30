@@ -1,9 +1,14 @@
 @import 'meta/utf-8.css';
 @import 'links/href.css';
 @import 'lists/list-item.css';
+@import 'headlines/empty-headline.css';
+@import 'inputs/input-no-label.css';
+@import 'inputs/id-for-attr.css';
+@import 'media/img-alt.css';
 
 :root {
-  --lint: 2px dashed red;
+  --lintWarning: 2px dotted lime;
+  --lintError: 2px dashed aqua;
 }
 
 body {

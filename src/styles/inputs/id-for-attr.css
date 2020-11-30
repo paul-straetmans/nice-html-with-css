@@ -1,0 +1,8 @@
+/* Debug inputs and labels without id or for attribute */
+/* Are you sure your code is ok? Explicit relation between an input and its label is always better. Use id and for attributes to do so. */
+/* By Geoffrey Crofte */
+
+input:not([id], label:not([for])) {
+  outline: var(--lintError);
+  content: '🙀 <input> without id or for attribute';
+}

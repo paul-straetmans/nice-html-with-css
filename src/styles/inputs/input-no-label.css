@@ -1,0 +1,9 @@
+/* Debug input fields without label */
+/* By Geoffrey Crofte */
+
+input:not([type='button']):not([type='reset']):not([type='submit']):not([aria-labelledby], [id]),
+textarea:not([aria-labelledby], [id]),
+label:not([for]) {
+  outline: var(--lintError);
+  content: '🙀 <input> has no label';
+}

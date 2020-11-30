@@ -1,7 +1,5 @@
-// import { example } from './js/toggle';
-
-// Test import of styles
+// import { toggle } from './js/toggle';
 import './styles/index.scss';
 
-// example();
+// toggle();
 console.log('blah blah');

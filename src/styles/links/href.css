@@ -6,6 +6,6 @@
 /* By Adam Argyle */
 
 a:matches(:not([href]), [href=''], [href='#']) {
-  outline: var(--lint);
-  content: "This selector hunts for links that have No href, an empty href and a '#' href";
+  outline: var(--lintError);
+  content: "🙀 <a> does not have href, an empty href or a '#' href";
 }
