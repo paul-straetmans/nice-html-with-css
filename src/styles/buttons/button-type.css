@@ -1,0 +1,8 @@
+/* Debugs buttons without type attribute, with CSS */
+/* Non-explicit type leads to button being a submit button. Not all buttons are submit buttons. A neutral type would be type="button" */
+/* By Adam Argyle */
+
+button:not([type]) {
+  outline: var(--lintWarning);
+  content: '😿 <button> has no type attribute';
+}

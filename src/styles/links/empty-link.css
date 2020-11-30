@@ -1,0 +1,11 @@
+/* Empty link without any kind of labelling */
+/* By Geoffrey Crofte */
+
+:matches(a):empty:not([aria-label]):not([aria-labelledby]),
+:matches(a):not([aria-label]):not([aria-labelledby])
+  img:only-child:matches(:not([alt]), [alt='']),
+:matches(a):not([aria-label]):not([aria-labelledby])
+  i:only-child:not([aria-label]):not([aria-labelledby]) {
+  outline: var(--lintError);
+  content: '🙀 <a> is empty and without label';
+}

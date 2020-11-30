@@ -1,0 +1,7 @@
+/* Unsecure [target=blank] */
+/* By Adam Argyle */
+
+[target$='blank']:not([rel], [rel*='noopener'], [rel*='noreferrer'], [rel*='noopener noreferrer']) {
+  outline: var(--lintError);
+  content: "🙀 prevent unsecure [target='_blank'] links";
+}

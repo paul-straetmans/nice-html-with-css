@@ -1,0 +1,11 @@
+/* Empty button without any kind of labelling */
+/* By Geoffrey Crofte */
+
+:matches(button):empty:not([aria-label]):not([aria-labelledby]),
+:matches(button):not([aria-label]):not([aria-labelledby])
+  img:only-child:matches(:not([alt]), [alt='']),
+:matches(button):not([aria-label]):not([aria-labelledby])
+  i:only-child:not([aria-label]):not([aria-labelledby]) {
+  outline: var(--lintError);
+  content: '🙀 <button> is empty and without label';
+}

@@ -1,0 +1,8 @@
+/* Summary must be the first child */
+/* By Adam Argyle */
+
+details > summary:not(:first-child),
+details > *:first-child:not(summary) {
+  outline: var(--lintWarning);
+  content: '😿 Summary must be the first child';
+}

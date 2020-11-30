@@ -1,0 +1,7 @@
+/* Prevent page load jank and CLS by finding <img>'s missing height and width attributes */
+/* By Adam Argyle */
+
+img:not([width]):not([height]) {
+  outline: var(--lintWarning);
+  content: '😿 <img> is missing height and width attributes';
+}

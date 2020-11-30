@@ -1,0 +1,8 @@
+/* SVG without title or aria-label and not considered as decorative */
+/* By Geoffrey Crofte */
+
+svg:not([role='presentation']):not([aria-label]):not([aria-labelledby])
+  > :first-child:not(title) {
+  outline: var(--lintWarning);
+  content: '😿 <svg> without title or aria-label and not considered as decorative';
+}

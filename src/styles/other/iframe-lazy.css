@@ -1,0 +1,7 @@
+/* <iframe> without native lazy loading */
+/* By Jay Holtslander */
+
+iframe:not([loading='lazy']) {
+  outline: var(--lintWarning);
+  content: "😿 <iframe>'s without native lazy loading";
+}

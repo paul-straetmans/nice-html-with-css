@@ -1,0 +1,7 @@
+/* SVG without focusable=false when decorative or hidden */
+/* By Geoffry Crofte */
+
+svg:matches([role='presentation'], [aria-label], [aria-labelledby], [aria-hidden='true']):not([focusable='false']) {
+  outline: var(--lintWarning);
+  content: '😿 <svg> without focusable=false when decorative or hidden';
+}
