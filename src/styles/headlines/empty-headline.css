@@ -1,0 +1,12 @@
+/* Debug empty headlines */
+/* By Paul Straetmans */
+h1:empty,
+h2:empty,
+h3:empty,
+h4:empty,
+h5:empty,
+h6:empty {
+  outline: var(--lintError);
+  display: block !important;
+  content: '🙀 No empty headline';
+}
