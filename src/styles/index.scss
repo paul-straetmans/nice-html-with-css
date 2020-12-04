@@ -29,6 +29,7 @@
 @import 'media/img-lazy.css';
 @import 'media/svg-focusable.css';
 @import 'media/svg-title.css';
+@import 'media/video-autoplay.css';
 
 // TABLE
 @import 'tables/table-caption.css';
@@ -42,6 +43,7 @@
 @import 'other/fieldset-legend.css';
 @import 'other/divs-inside-inline.css';
 @import 'other/embed-iframe-dimensions.css';
+@import 'other/iframe-title.css';
 
 :root {
   --lintWarning: 2px dotted orange;

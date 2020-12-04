@@ -1,0 +1,7 @@
+/* iframe requires title */
+/* By Maximilian Eichenauer */
+
+iframe:not([title]) {
+  outline: var(--lintError);
+  content: '🙀 <iframe> requires title';
+}
