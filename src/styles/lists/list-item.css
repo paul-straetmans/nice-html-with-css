@@ -2,7 +2,7 @@
 /* This selector hunts for lists that have something other than an <li> inside */
 /* By Adam Argyle */
 
-:matches(ul, ol) *:not(li) {
+:matches(ul, ol) > *:not(li) {
   outline: var(--lintError);
   content: '🙀 no usage of <li> element on first level';
 }
