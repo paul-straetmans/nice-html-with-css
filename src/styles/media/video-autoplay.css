@@ -1,0 +1,8 @@
+/* Video should not autoplay */
+/* Unless muted. */
+/* edited by Maximilian Eichenauer */
+
+video[autoplay]:not([muted]) {
+    outline: var(--lintError);
+    content: '🙀 <video> should not autoplay.';
+}
