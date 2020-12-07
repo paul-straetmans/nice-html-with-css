@@ -1,6 +1,5 @@
 /* Empty button without any kind of labelling */
 /* By Geoffrey Crofte */
-/* edited by Maximilian Eichenauer */
 
 :matches(button):empty:not([aria-label]):not([aria-labelledby]),
 :matches(button):not([aria-label]):not([aria-labelledby])
