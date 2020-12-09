@@ -2,7 +2,6 @@
   "name": "nice-html-with-css",
   "version": "1.0.0",
   "description": "lint your html by adding a stylesheet to your project",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
