@@ -1,17 +1,28 @@
+const paths = require('./paths');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const PACKAGE = require('../package.json');
 const version = PACKAGE.version;
 
 module.exports = {
   mode: 'production',
   devtool: false,
+  output: {
+    path: paths.build,
+  },
   plugins: [
     // Extracts CSS into separate files
     // Note: style-loader is for development, MiniCssExtractPlugin is for production
     new MiniCssExtractPlugin({
       filename: `nice-html-with-css-v${version}.css`,
       chunkFilename: '[id].css',
+    }),
+    new CleanWebpackPlugin({
+      protectWebpackAssets: false,
+      cleanAfterEveryBuildPatterns: ['*.js'],
+      dry: false,
+      verbose: true,
     }),
   ],
   module: {
