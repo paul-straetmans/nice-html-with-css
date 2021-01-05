@@ -12,6 +12,10 @@ Insert the distributed css file to your project. Preferrable at the end of your 
 
 Another option is to use an extension like [User CSS](https://chrome.google.com/webstore/detail/user-css/okpjlejfhacmgjkmknjhadmkdbcldfcb?hl=en) to append the css afterwards in the browser.
 
+### Firefox style import
+
+Open the Firefox Developer Tools and click the Style Editor Tab. Click the Import-Button and select the distributed css file from your disk to apply it.
+
 ## 🎮 Usage
 
 Developers can inspect the warning/error by reading the message in the devtools styles (filter styles for "content").
